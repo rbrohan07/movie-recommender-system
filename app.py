@@ -24,7 +24,11 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.header('Movie Recommender System')
+st.header(':film_projector::clapper: :red[Movie Recommender System]  	 :popcorn:')
+
+# st.header('A header with _italics_ :blue[colors] and emojis :sunglasses:')
+# original_title = '<p style="font-family:Courier; color:red; font-size: 40px;"><strong>Movie Recommender System</strong></p>'
+# st.markdown(original_title, unsafe_allow_html=True)
 movies = pickle.load(open('movie_list.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 
